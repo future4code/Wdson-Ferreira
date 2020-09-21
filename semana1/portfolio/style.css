@@ -49,3 +49,16 @@ body {
     margin-top: 50px;
     margin-bottom: 15px;
 }
+
+.expert {
+    height: 5%;
+    margin: 5px;
+}
+
+.expert img {
+    display: inline-block;
+    width: 28%;
+    padding: 30px 10px;
+    margin: 2%;
+    text-align: center;
+}
