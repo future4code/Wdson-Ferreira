@@ -11,8 +11,7 @@
     background-color: #EF843A;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
     padding: 20px;
 }
 
@@ -31,6 +30,16 @@ img {
 }
 
 .media-play > div {
-    flex: 1 1 200px;
+    flex: 1 1 150px;
     margin: 10px;
+}
+
+.rodape {
+    background-color: #323B3E;
+    height: 50px;
+}
+
+.info-rodape {
+    color: aliceblue;
+    font-size: 0.8rem;
 }
