@@ -11,6 +11,8 @@ div {
 
 #first-block {
     background-color: red;
+    padding: 3rem;
+
 }
 
 .blue-block {
@@ -34,12 +36,35 @@ div {
     background-color: white;
 }
 
-@media screen and (min-width: 320px) and (max-width: 420px) {
-    #main-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 100px;
+.grupo-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 30px;
+}
+
+.grupo-2 {
+    height: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grupo-3 {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grupo-4 {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (min-width: 240px) and (max-width: 800px) {
+    body {
+        width: 100;
+        grid-template-columns: 1/4/2/3;
+        grid-template-rows: 20px;
+        grid-gap: 10px;
     }
-
-
 }
