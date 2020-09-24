@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-family: Arial;
+    text-decoration: none;
+}
+
+.cabecalho {
+    width: 100%;
+    background-color: #EF843A;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* FLEXBOX */
+
+.media-play {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.media-play > div {
+    flex: 1 1 200px;
+    margin: 10px;
+}
