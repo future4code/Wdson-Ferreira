@@ -40,7 +40,16 @@ img {
 
 .rodape {
     background-color: #121214;
-    min-height: 10vh;
+    width: 100%;
+    padding: 20px;
+    margin-top: 90px;
+}
+
+.rodape-video {
+    background-color: #121214;
+    width: 100%;
+    padding: 20px;
+    margin-top: 160px;
 }
 
 .info-rodape {
