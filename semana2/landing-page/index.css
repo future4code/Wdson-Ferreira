@@ -1,0 +1,121 @@
+/* 
+    Colors 
+
+#182D40 - Azul mar
+#386D73 - Azul cinza
+#468C8C - Azul-verde
+#71D9CE - Azul claro
+#F2F2F2 - Branco
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: arial;
+}
+
+.wrap {
+    background: rgba(0, 0, 0, 0.5) url(./img/house.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+    background-blend-mode: overlay;
+}
+.wave {
+    position: absolute;
+    width: 100%;
+    bottom: -140px;
+    color: #F2F2F2;
+    opacity: 1;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 80px;
+    background: linear-gradient(to top, transparent, rgba(0,0,0,0.6));
+}
+header .logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #F2F2F2;
+    float: left;
+}
+header .menu {
+    float: right;
+    margin-top: 5px;
+}
+header ul li {
+    display: inline-block;
+}
+header ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #F2F2F2;
+    margin: 0 25px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.content {
+    max-width: 55%;
+    padding: 200px 80px 0;
+    color: #F2F2F2;
+}
+.content h1 {
+    font-size: 48px;
+}
+.content p {
+    font-size: 20px;
+    padding: 25px 0;
+    font-weight: 300;
+}
+.content .btn-group {
+    margin-top: 45px;
+}
+.content a {
+    display: inline-block;
+    padding: 15px 45px;
+    text-decoration: none;
+    color: #F2F2F2;
+    border-radius: 50px;
+}
+.content a.color-1 {
+    background-color: #386D73;
+}
+
+.partners {
+    padding: 0 80px;
+    position: relative;
+}
+.partners h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.partners hr {
+    border: none;
+    height: 4px;
+    width: 100px;
+    background-color: #182D40;
+}
+
+.partners-parceiros {
+    margin-top: 50px;
+}
+.partners-parceiros a {
+    display: inline-block;
+    width: 14%;
+    padding: 15px;
+    margin-right: 25px;
+    border: 1px solid #F2F2F2;
+    border-radius: 20px;
+}
+.partners-parceiros img {
+    width: 100%;
+}
