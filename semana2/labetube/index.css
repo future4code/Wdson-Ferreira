@@ -8,11 +8,15 @@
 
 .cabecalho {
     width: 100%;
-    background-color: #EF843A;
+    background-color: #121214;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
+}
+
+h1 {
+    color: white;
 }
 
 img {
@@ -35,11 +39,11 @@ img {
 }
 
 .rodape {
-    background-color: #323B3E;
-    height: 50px;
+    background-color: #121214;
+    min-height: 10vh;
 }
 
 .info-rodape {
-    color: aliceblue;
+    color: white;
     font-size: 0.8rem;
 }
