@@ -40,3 +40,10 @@ console.log(myFood[4]);
 foodUser = prompt('Qual a sua comida preferida : ');
 myFood[1] = foodUser;
 console.log(myFood);
+
+let myQuestion = ['Você é maior de 18 anos?', 'Voce é chileno(a)', 'Você é programador(a)?'];
+let myAnswers = [true, false,true];
+
+console.log(myQuestion[0] , myAnswers[0]);
+console.log(myQuestion[1] , myAnswers[1]);
+console.log(myQuestion[2] , myAnswers[2]);
