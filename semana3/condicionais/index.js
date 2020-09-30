@@ -104,6 +104,13 @@ switch (shiftStudy) {
         break;
 }
 
+// 7) 
 
+const watchMovie = prompt('Qual o genero vao assitir ?')
+const ticketPrice = Number(prompt('Qual o preco do ingresso? '))
 
-// 7)
+if(watchMovie === 'Fantasia' && ticketPrice < 15){
+    console.log('Bom filme!')
+}else{
+    console.log('Escolha outro filme :(')
+}
