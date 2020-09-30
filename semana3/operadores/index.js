@@ -1,4 +1,4 @@
-
+/*
 Exercícios de interpretação de código
 1)
 
@@ -38,6 +38,7 @@ console.log('e. ', array) // (11) [3,19,5,6,7,8,9,10,11,12,13]
 const valor = array[i+6]
 console.log('f. ', valor) // 9
 
+*/
 
 // Exercicios de escrita de código 
 
@@ -63,4 +64,23 @@ let firstQuestion = prompt('Digite uma tarefa do dia');
 let secondQuestion = prompt('Digite outra tarefa do dia');
 let thirdQuestion = prompt('Digite outra tarefa do dia');
 
+listaDeTarefas.push(firstQuestion);
+listaDeTarefas.push(secondQuestion);
+listaDeTarefas.push(thirdQuestion);
 
+console.log(listaDeTarefas);
+
+indiceRemove = Number(prompt('Digite um indice: 0, 1 ou 2: '));
+listaDeTarefas.splice(indiceRemove);
+console.log(listaDeTarefas);
+
+
+
+// 4
+
+let emailDoUsario = prompt('Digite seu e-mail: ');
+let nomeDoUsuario = prompt('Digite seu nome de Usuario: ');
+
+console.log('O e-mail: ', emailDoUsario, 
+' foi cadastrado com sucesso. ', 'Seja bem-vind@ ',
+nomeDoUsuario);
