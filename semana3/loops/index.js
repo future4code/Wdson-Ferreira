@@ -5,7 +5,6 @@
 // Res - incrementando valores de 1 em 1 ate que seja menor que 5.
 // -- Qual o resultado impresso no console?
 // Res - 5
-
 let valor = 0
 for(let i = 0; i < 5; i++){
     valor += 1
@@ -25,8 +24,6 @@ for (let numero of lista) {
    
 }
 
-
-
 // Exercícios de escrita de código
 //      Exercicio 3
 const arrayOriginal = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]
@@ -41,4 +38,27 @@ for(let i = 0; i < arrayOriginal.length; i++){
         numerosPares.push(arrayOriginal[i])
     }
 }
-console.log(numerosPares)
+console.log(numerosPares) 
+
+let arrayDeStrings = []
+let stringTexto = ''
+let i = 0
+for(let numero of arrayOriginal){
+    stringTexto = 'O elemento do index ' + i + ' é: ' + numero
+    arrayDeStrings.push(stringTexto)
+    i++
+}
+console.log(arrayDeStrings)  
+
+let valorMaximo = 20
+let valorMinimo = 131
+for(let num of arrayOriginal){
+    if(num > valorMaximo){
+        valorMaximo = num
+    }
+    if(num < valorMinimo){
+        valorMinimo = num
+    }
+}
+console.log(valorMaximo)
+console.log(valorMinimo)
