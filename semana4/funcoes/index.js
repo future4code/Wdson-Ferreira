@@ -47,8 +47,58 @@ let arrayFinal = [];
 
 
 // EXERCÍCIO 4
+// A)
 
 const minhaInfo = () => {
 	return 'Eu sou Wdson, tenho 25 anos, moro em São Luís e sou estudante. '
 }
 console.log(minhaInfo())
+
+// B)
+
+const dadosEstudante = (nome, idade, endereco, estudante) => {
+    if(estudante === 'sim') {
+    	estudante = "sou estudante"
+    } else {
+    	estudante = "não sou estudante"
+    }
+    	console.log(`Eu sou a ${nome}, tenho ${idade} anos, moro em ${endereco} e ${estudante}`)
+}
+
+const nome = prompt('Digite seu nome')
+const idade = Number(prompt('Digite sua idade '))
+const endereco = prompt('Digite seu endereco')
+const estudante = prompt('Voce e estudante, sim ou nao ?')
+
+const meusDadosEstudante = dadosEstudante(nome, idade, endereco, estudante)
+console.log(meusDadosEstudante)
+
+
+// EXERCICIO 5
+// A)
+
+const somaValores = (valorA, valorB) => {
+	return valorA + valorB
+}
+console.log(somaValores(2, 5))
+
+// B)
+
+const somaDoisValores = (valorX, valorY) => {
+	if(valorX >= valorY) {
+		return valorX
+	}
+	else {
+		return valorY
+	}
+}
+console.log(somaDoisValores(4,8))
+
+// C)
+
+const mensagem = (umaMensagem) => {
+	for(let i = 0; i < 10; i++) {
+		console.log('vasco')
+	}
+}
+console.log(mensagem())
