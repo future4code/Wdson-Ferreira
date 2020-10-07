@@ -2,7 +2,7 @@ function adicionaTarefa() {
 	const minhaTarefa = document.getElementById("tarefa")
 
 	const diasDaSemana = document.getElementById("dias-semana").value
-	const minhaLista= document.getElementById(diasDaSemana)
+	const minhaLista = document.getElementById(diasDaSemana)
 
 	if (minhaTarefa !== "") {
 
