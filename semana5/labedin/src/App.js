@@ -7,7 +7,7 @@ import email from './img/email-icon.png';
 import endereco from './img/endereco-icon.png';
 import CardGrande from './components/CardGrande/CardGrande';
 import ImagemButton from './components/ImagemButton/ImagemButton';
-import CardPequeno from './components/CardPequeno/CardPequeno';
+import CardPequeno from './components/CardPequeno/CardPequeno'; 
 
 function App() {
   return (
