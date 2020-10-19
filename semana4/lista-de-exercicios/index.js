@@ -325,7 +325,7 @@ consultas.forEach((pessoa) => {
 console.log(arrayDeEmailsCancelados)
 */
 
-/* 5.
+5.
 const contas = [
 	{ cliente: "João", saldoTotal: 1000, compras: [100, 200, 300] },
 	{ cliente: "Paula", saldoTotal: 7500, compras: [200, 1040] },
@@ -345,4 +345,3 @@ let atualizaSaldoTotal = (lista) => {
     return contas
 }
 console.log(atualizaSaldoTotal(contas))
-*/
