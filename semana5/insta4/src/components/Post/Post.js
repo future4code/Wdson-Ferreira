@@ -17,10 +17,17 @@ class Post extends React.Component {
   }
 
   onClickCurtida = () => {
+    let novoNumeroCurtidas
+
+    if(this.state.curtido) {
+      novoNumeroCurtidas = this.state.numeroCurtidas - 1
+    } else {
+      novoNumeroCurtidas = this.state.numeroCurtidas + 1
+    }
+
     this.setState({
       curtido: !this.state.curtido,
-      numeroCurtidas: this.state.numeroCurtidas + 1,
-      numeroCurtidas: this.state.numeroCurtidas === -1
+      numeroCurtidas: novoNumeroCurtidas
     })
   }
 
@@ -36,7 +43,7 @@ class Post extends React.Component {
       numeroComentarios: this.state.numeroComentarios + 1
     })
   }
-  
+
   render() {
     let iconeCurtida
 
