@@ -1,81 +1,26 @@
-import React from 'react';
-import axios from 'axios';
+import React from "react";
+import FormPage from "./components/FormPage";
+import UserListPage from "./components/UserListPage";
 
 class App extends React.Component {
-	state = {
-		playlists: [],
-		playlistValue: ""
-	};
+  state = {
+    formPage: true
+  };
 
-	componentDidMount = () => {
-		this.pegarPlaylists();
-	};
+  changePage = () => {
+    this.setState({ formPage: !this.state.formPage });
+  };
 
-	pegarPlaylists = () => {
-		axios
-			.get(
-				"https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
-				{
-					headers: {
-						Authorization: "severo-dumont"
-					}
-				}
-			)
-			.then((resposta) => {
-				this.setState({ playlists: resposta.data.result.list });
-			})
-			.catch((err) => {
-				console.log(err.message);
-			});
-	};
+  render() {
+    const currentPage = this.state.formPage ? <FormPage /> : <UserListPage />;
 
-	criarPlaylist = () => {
-		const body = {
-			name: this.state.playlistValue
-		};
-
-		axios
-			.post(
-				"https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
-				body,
-				{
-					headers: {
-						Authorization: "severo-dumont"
-					}
-				}
-			)
-			.then((res) => {
-				this.setState({ playlistValue: "" });
-				this.pegarPlaylists();
-			})
-			.catch((error) => {
-				console.log(error.message);
-			});
-	};
-
-	onChangePlaylistValue = (event) => {
-		this.setState({ playlistValue: event.target.value });
-	};
-
-	render() {
-		const renderedPlaylists = this.state.playlists.map((playlist) => {
-			return <p key={playlist.id}>{playlist.name}</p>;
-		});
-
-		return (
-			<div className="App">
-				<div>
-					<input
-						placeholder="Nome da Playlist"
-						value={this.state.playlistValue}
-						onChange={this.onChangePlaylistValue}
-					/>
-					<button onClick={this.criarPlaylist}>Criar Playlist</button>
-				</div>
-				{renderedPlaylists}
-			</div>
-		);
-	}
+    return (
+      <div className="App">
+        {currentPage}
+        <button onClick={this.changePage}>Mudar de Página</button>
+      </div>
+    );
+  }
 }
 
 export default App;
